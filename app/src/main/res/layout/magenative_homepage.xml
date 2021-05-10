@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/main"
+    android:scrollbars="none"
+    android:visibility="invisible"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/MageNative_homepagebanner"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:background="@color/white" />
+        <com.goodwill.wholesale.productviewsection.CirclePageIndicator
+            android:id="@+id/MageNative_indicator2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MageNative_homepagebanner"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:padding="5dp" />
+        <RelativeLayout
+            android:id="@+id/staggaredgridsection"
+            android:layout_below="@id/MageNative_indicator2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            >
+            <TextView
+                android:id="@+id/staggeredcatname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textSize="15sp"
+                android:textColor="@color/AppTheme"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/staggeredcatid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/staggeredproducts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/staggeredcatname"
+                android:layout_margin="4dp" />
+            <TextView
+                android:id="@+id/sectionviewall"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginStart="3dp"
+                android:layout_below="@id/staggeredproducts"
+                android:background="@color/AppTheme"
+                android:gravity="center"
+                android:text="@string/viewmore"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                />
+        </RelativeLayout>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/middlebanner"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:visibility="gone"
+            android:layout_below="@+id/staggaredgridsection"
+            android:background="@color/white" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/middlebanner"
+            android:visibility="gone"
+            android:id="@+id/grid9imagesection">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/catid"
+               android:visibility="gone"/>
+            <TextView
+                android:id="@+id/tittle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textSize="15sp"
+                android:textColor="@color/AppTheme"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <GridLayout
+            android:id="@+id/catgrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/grid9imagesection"
+            android:layout_centerHorizontal="true"
+            android:columnCount="3"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:rowCount="1"
+            >
+            <RelativeLayout
+                android:id="@+id/cat1section"
+                android:layout_width="118dp"
+                android:visibility="gone"
+                android:layout_height="118dp">
+                <ImageView
+                    android:id="@+id/cat1image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/prod2" />
+
+                <TextView
+                    android:id="@+id/cat1id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/ebebebe" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/ebebebe" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/cat2section"
+                android:layout_width="118dp"
+                android:visibility="gone"
+                android:layout_height="118dp">
+
+                <ImageView
+                    android:id="@+id/cat2image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/prod2"
+                    android:adjustViewBounds="true"
+                     />
+                <TextView
+                    android:id="@+id/cat2id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/ebebebe" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/ebebebe" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/cat3section"
+                android:layout_width="118dp"
+                android:visibility="gone"
+                android:layout_height="118dp">
+
+                <ImageView
+                    android:id="@+id/cat3image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/prod2"
+                    android:adjustViewBounds="true"
+                     />
+                <TextView
+                    android:id="@+id/cat3id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/ebebebe" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/ebebebe" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cat4section"
+                android:layout_width="118dp"
+                android:visibility="gone"
+                android:layout_height="118dp">
+
+                <ImageView
+                    android:id="@+id/cat4image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/prod2"
+                    android:adjustViewBounds="true"
+                     />
+                <TextView
+                    android:id="@+id/cat4id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/ebebebe" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/ebebebe" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cat5section"
+                android:layout_width="118dp"
+                android:visibility="gone"
+                android:layout_height="118dp">
+
+                <ImageView
+                    android:id="@+id/cat5image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/prod2"
+                    android:adjustViewBounds="true"
+                     />
+                <TextView
+                    android:id="@+id/cat5id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/ebebebe" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/ebebebe" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cat6section"
+                android:layout_width="118dp"
+                android:visibility="gone"
+                android:layout_height="118dp">
+
+                <ImageView
+                    android:id="@+id/cat6image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/prod2"
+                    android:adjustViewBounds="true"
+                     />
+
+                <TextView
+                    android:id="@+id/cat6id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/ebebebe" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/ebebebe" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cat7section"
+                android:layout_width="118dp"
+                android:visibility="gone"
+                android:layout_height="118dp">
+
+                <ImageView
+                    android:id="@+id/cat7image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/prod2"
+                    android:adjustViewBounds="true"
+                     />
+                <TextView
+                    android:id="@+id/cat7id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/ebebebe" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/ebebebe" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cat8section"
+                android:layout_width="118dp"
+                android:visibility="gone"
+                android:layout_height="118dp">
+
+                <ImageView
+                    android:id="@+id/cat8image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/prod2"
+                    android:adjustViewBounds="true"
+                     />
+                <TextView
+                    android:id="@+id/cat8id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/ebebebe" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/ebebebe" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cat9section"
+                android:layout_width="118dp"
+                android:visibility="gone"
+                android:layout_height="118dp">
+
+                <ImageView
+                    android:id="@+id/cat9image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/prod2"
+                    android:adjustViewBounds="true"
+                     />
+                <TextView
+                    android:id="@+id/cat9id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/ebebebe" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/ebebebe" />
+            </RelativeLayout>
+        </GridLayout>
+        <TextView
+            android:id="@+id/viewcats"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/catgrid"
+            android:background="@color/AppTheme"
+            android:gravity="center"
+            android:text="@string/starthere"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/thirdcollections"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/viewcats"
+            android:background="@color/white"
+            >
+            <TextView
+                android:id="@+id/thirdcatname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:text="@string/youwill"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/thirdcatid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:visibility="gone" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/thirdcatname"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/products"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white" />
+                <TextView
+                    android:id="@+id/viewall"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/AppTheme"
+                    android:gravity="center"
+                    android:text="@string/viewmore"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/bannersection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/thirdcollections"
+            android:layout_margin="4dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/recentlyviewedsection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/bannersection"
+            android:background="@color/ebebebe"
+            android:visibility="gone"
+            >
+            <TextView
+                android:id="@+id/recentlyviewedname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:background="@color/white"
+                android:text="@string/recent"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recentlyviewedname"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recentsproducts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical"
+                    android:background="@color/white" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

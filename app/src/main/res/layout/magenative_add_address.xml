@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~  /**
+  ~      * CedCommerce
+  ~      *
+  ~      * NOTICE OF LICENSE
+  ~      *
+  ~      * This source file is subject to the End User License Agreement (EULA)
+  ~      * that is bundled with this package in the file LICENSE.txt.
+  ~      * It is also available through the world-wide-web at this URL:
+  ~      * http://cedcommerce.com/license-agreement.txt
+  ~      *
+  ~      * @category  Ced
+  ~      * @package   MageNative
+  ~      * @author    CedCommerce Core Team <connect@cedcommerce.com >
+  ~      * @copyright Copyright CEDCOMMERCE (http://cedcommerce.com/)
+  ~      * @license      http://cedcommerce.com/license-agreement.txt
+  ~      */
+  -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/addressform"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/firstname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:backgroundTint="@color/main_color_gray_lt"
+            android:hint="@string/firstname"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="#5C5C5C"
+            android:textSize="15sp"
+            tools:targetApi="lollipop" />
+        <EditText
+            android:id="@+id/lastname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:backgroundTint="@color/main_color_gray_lt"
+            android:hint="@string/lastname"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="#5C5C5C"
+            android:textSize="15sp"
+            tools:targetApi="lollipop" />
+        <EditText
+            android:id="@+id/company"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:backgroundTint="@color/main_color_gray_lt"
+            android:hint="@string/company"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="#5C5C5C"
+            android:textSize="15sp"
+            tools:targetApi="lollipop" />
+        <EditText
+            android:id="@+id/address1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:backgroundTint="@color/main_color_gray_lt"
+            android:hint="@string/address1"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="#5C5C5C"
+            android:textSize="15sp"
+            tools:targetApi="lollipop" />
+        <EditText
+            android:id="@+id/address2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:backgroundTint="@color/main_color_gray_lt"
+            android:hint="@string/address2"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="#5C5C5C"
+            android:textSize="15sp"
+            tools:targetApi="lollipop" />
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:backgroundTint="@color/main_color_gray_lt"
+            android:hint="@string/city"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="#5C5C5C"
+            android:textSize="15sp"
+            tools:targetApi="lollipop" />
+        <Spinner
+            android:id="@+id/country"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:backgroundTint="@color/black"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="#5C5C5C"
+            android:textSize="15sp"
+            tools:targetApi="lollipop" />
+        <Spinner
+            android:id="@+id/provinces"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:backgroundTint="@color/black"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="#5C5C5C"
+            android:textSize="15sp"
+            tools:targetApi="lollipop" />
+        <EditText
+            android:id="@+id/statetext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:backgroundTint="@color/main_color_gray_lt"
+            android:hint="@string/state"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="#5C5C5C"
+            android:textSize="15sp"
+            android:visibility="gone"
+            tools:targetApi="lollipop" />
+        <EditText
+            android:id="@+id/zip"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:backgroundTint="@color/main_color_gray_lt"
+            android:hint="@string/Postal_ZipCode"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="#5C5C5C"
+            android:textSize="15sp"
+            tools:targetApi="lollipop" />
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:backgroundTint="@color/main_color_gray_lt"
+            android:hint="@string/phone"
+            android:inputType="phone"
+            android:padding="5dp"
+            android:textColor="#5C5C5C"
+            android:textSize="15sp"
+            tools:targetApi="lollipop" />
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:background="@color/AppTheme"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright/**
+  ~          * CedCommerce
+  ~           *
+  ~           * NOTICE OF LICENSE
+  ~           *
+  ~           * This source file is subject to the End User License Agreement (EULA)
+  ~           * that is bundled with this package in the file LICENSE.txt.
+  ~           * It is also available through the world-wide-web at this URL:
+  ~           * http://cedcommerce.com/license-agreement.txt
+  ~           *
+  ~           * @category  Ced
+  ~           * @package   MageNative
+  ~           * @author    CedCommerce Core Team <connect@cedcommerce.com >
+  ~           * @copyright Copyright CEDCOMMERCE (http://cedcommerce.com/)
+  ~           * @license      http://cedcommerce.com/license-agreement.txt
+  ~           */
+  -->
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="5dp"
+    android:id="@+id/main"
+    android:background="@drawable/product_corners"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/MageNative_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="5dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/image"
+        android:padding="5dp"
+        />
+
+    <TextView
+        android:id="@+id/MageNative_title"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:maxLines="2"
+        android:layout_toEndOf="@+id/MageNative_image"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:text="ddddddd"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:textSize="13sp"  />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/MageNative_title"
+        android:layout_toEndOf="@+id/MageNative_image"
+        android:textSize="12sp"
+        android:id="@+id/pricesection"
+        >
+
+        <TextView
+            android:id="@+id/MageNative_specialprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MageNative_image"
+            android:textColor="@color/red"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/MageNative_reguralprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:layout_below="@+id/MageNative_specialprice"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pricesection"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@+id/MageNative_image"
+        android:id="@+id/discountsection"
+        android:visibility="gone"
+        android:text="dddddddd"
+        android:textSize="12sp"
+        android:textColor="@color/discountColor"
+        ></TextView>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/variants"
+        android:layout_below="@+id/discountsection"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/spnr_product_corners"
+        android:layout_toEndOf="@+id/MageNative_image"
+        ></Spinner>
+
+    <TextView
+        android:id="@+id/varianttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="sadasdasdasdas"
+        android:layout_toEndOf="@+id/MageNative_image"
+        android:layout_below="@+id/variants"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        ></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/addtocartsection"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/varianttext"
+        android:layout_toEndOf="@+id/MageNative_image"
+        >
+        <ImageView
+            android:id="@+id/wishlist"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="2dp"
+            android:padding="5dp"
+            android:contentDescription="@string/image"
+            android:src="@drawable/wishlike" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:id="@+id/quantity"
+            android:background="@drawable/product_corners"
+            android:layout_weight="1"
+            android:text="1"
+            android:inputType="number"
+            android:gravity="center"
+            ></EditText>
+
+        <Button
+            android:id="@+id/addtocart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_toEndOf="@+id/MageNative_image"
+            android:layout_weight="2"
+            android:background="@drawable/addtocart_background"
+            android:padding="5dp"
+            android:text="@string/add"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:textStyle="bold"></Button>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/product_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+</RelativeLayout>
+
+
+

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright/**
+  ~           * CedCommerce
+  ~           *
+  ~           * NOTICE OF LICENSE
+  ~           *
+  ~           * This source file is subject to the End User License Agreement (EULA)
+  ~           * that is bundled with this package in the file LICENSE.txt.
+  ~           * It is also available through the world-wide-web at this URL:
+  ~           * http://cedcommerce.com/license-agreement.txt
+  ~           *
+  ~           * @category  Ced
+  ~           * @package   MageNative
+  ~           * @author    CedCommerce Core Team <connect@cedcommerce.com >
+  ~           * @copyright Copyright CEDCOMMERCE (http://cedcommerce.com/)
+  ~           * @license   http://cedcommerce.com/license-agreement.txt
+  ~           */
+  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MageNative_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+   >
+    <LinearLayout
+        android:id="@+id/MageNative_sortingsection"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/shadow"
+        android:baselineAligned="false"
+        android:weightSum="2">
+        <RelativeLayout
+            android:id="@+id/MageNative_sortsection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:layout_weight="1"
+            android:background="@color/white">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/MageNative_sortproduct"
+                android:contentDescription="@string/image"
+                android:padding="5dp"
+                android:src="@drawable/sort_icon"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/MageNative_sortproduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:text="@string/sortby"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/MageNative_filtersection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/MageNative_filterproduct"
+                android:contentDescription="@string/image"
+                android:padding="5dp"
+                android:src="@drawable/filter_icon"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/MageNative_filterproduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:text="@string/filter"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/MageNative_linebelowsorting"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/MageNative_sortingsection"
+        android:background="#EBEBEB" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/MageNative_linebelowsorting"
+        android:background="@color/white"
+        android:numColumns="1"
+        android:scrollbars="none" />
+</RelativeLayout>

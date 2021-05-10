@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright/**
+  ~          * CedCommerce
+  ~           *
+  ~           * NOTICE OF LICENSE
+  ~           *
+  ~           * This source file is subject to the End User License Agreement (EULA)
+  ~           * that is bundled with this package in the file LICENSE.txt.
+  ~           * It is also available through the world-wide-web at this URL:
+  ~           * http://cedcommerce.com/license-agreement.txt
+  ~           *
+  ~           * @category  Ced
+  ~           * @package   MageNative
+  ~           * @author    CedCommerce Core Team <connect@cedcommerce.com >
+  ~           * @copyright Copyright CEDCOMMERCE (http://cedcommerce.com/)
+  ~           * @license      http://cedcommerce.com/license-agreement.txt
+  ~           */
+  -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/MageNative_createaccounttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:text="@string/signupwithustext"
+            android:textColor="#5C5C5C"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MageNative_createaccounttext"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+
+            <EditText
+                android:id="@+id/firstname"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_margin="15dp"
+                android:backgroundTint="@color/main_color_gray_lt"
+                android:hint="@string/full_name"
+                android:inputType="text"
+                android:padding="5dp"
+                android:textColor="#5C5C5C"
+                android:textSize="15sp"
+                tools:targetApi="lollipop" />
+            <EditText
+                android:id="@+id/lastname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="15dp"
+                android:backgroundTint="@color/main_color_gray_lt"
+                android:hint="@string/company_name"
+                android:inputType="text"
+                android:padding="5dp"
+                android:textColor="#5C5C5C"
+                android:textSize="15sp"
+                tools:targetApi="lollipop" />
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="15dp"
+                android:backgroundTint="@color/main_color_gray_lt"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:padding="5dp"
+                android:textColor="#5C5C5C"
+                android:textSize="15sp"
+                tools:targetApi="lollipop" />
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="15dp"
+                android:visibility="visible"
+                android:backgroundTint="@color/main_color_gray_lt"
+                android:hint="@string/phone"
+                android:inputType="phone"
+                android:padding="5dp"
+                android:textColor="#5C5C5C"
+                android:textSize="15sp"
+                tools:targetApi="lollipop" />
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="15dp"
+                android:backgroundTint="@color/main_color_gray_lt"
+                android:hint="@string/Password"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:textColor="#5C5C5C"
+                android:textSize="15sp"
+                tools:targetApi="lollipop" />
+            <EditText
+                android:id="@+id/confirmpassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="15dp"
+                android:backgroundTint="@color/main_color_gray_lt"
+                android:hint="@string/confirmpassword"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:textColor="#5C5C5C"
+                android:textSize="15sp"
+                tools:targetApi="lollipop" />
+            <Button
+                android:id="@+id/MageNative_register"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="15dp"
+                android:background="@color/AppTheme"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "303029521135",
+    "firebase_url": "https://ttc-app-11748.firebaseio.com",
+    "project_id": "ttc-app-11748",
+    "storage_bucket": "ttc-app-11748.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303029521135:android:1344b1a7fc303ce6c4e91a",
+        "android_client_info": {
+          "package_name": "com.goodwill.wholesale"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "303029521135-76flub80npjpi1btsh0neu1k6ro1rqm9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.goodwill.wholesale",
+            "certificate_hash": "a11f7769ab4165046d86d6884d7aa1e3382f9b25"
+          }
+        },
+        {
+          "client_id": "303029521135-9lcpparvehq5u6u674q0kppof540n842.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAa-yeAvV8XQ_sBN1Ie4wcNnIkGg1SinUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "303029521135-9lcpparvehq5u6u674q0kppof540n842.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
